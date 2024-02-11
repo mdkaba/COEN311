@@ -4,7 +4,7 @@ Computer Organization and Software
 ## 📌 Pinned
 
 ### Lab Assignments
-- [Lab 1: Intel x86 Assembly Programming](link_to_lab1)
+- [Lab 1: Intel x86 Assembly Programming](https://github.com/mdkaba/COEN311/tree/main/Lab%201-%20COEN311)
 - [Lab 2: Intel x86 Addressing Modes and Advanced Tool Exploration](link_to_lab2)
 - [Lab 3: Basic Arithmetic Operations and Two-Dimensional Array Manipulation](link_to_lab3)
 - [Lab 4: Flow Control and String Manipulation in Intel x86 Assembly Language](link_to_lab4)
