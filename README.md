@@ -17,7 +17,7 @@ Goals:
 - Introduce various Intel x86 addressing modes, which determine how assembly language instructions access data operands.
 - Explore additional features of the NASM assembler, GDB debugger, and other Linux utilities.
 
-[Lab 3: Basic Arithmetic Operations and Two-Dimensional Array Manipulation](link_to_lab3)
+[Lab 3: Basic Arithmetic Operations and Two-Dimensional Array Manipulation](https://github.com/mdkaba/COEN311/tree/main/Lab%203-%20COEN311)
 
 Goals:
 - Gain proficiency in basic arithmetic operations within the context of assembly language programming.
