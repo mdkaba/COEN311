@@ -11,7 +11,7 @@ Goals:
 - Learn to single-step through programs using the GDB command-line debugger.
 
   
-[Lab 2: Intel x86 Addressing Modes and Advanced Tool Exploration](link_to_lab2)
+[Lab 2: Intel x86 Addressing Modes and Advanced Tool Exploration](https://github.com/mdkaba/COEN311/tree/main/Lab%202-%20COEN311)
 
 Goals:
 - Introduce various Intel x86 addressing modes, which determine how assembly language instructions access data operands.
