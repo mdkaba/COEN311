@@ -1,0 +1,37 @@
+     1                                  ; Mamadou Diao Kaba
+     2                                  section .data
+     3 00000000 6A754D70696E67204A-     	message db 'juMping Jack flaSh #1',10,0
+     3 00000009 61636B20666C615368-
+     3 00000012 2023310A00         
+     4                                  section .text
+     5                                  	global _start
+     6                                  
+     7                                   _start:
+     8 00000000 B804000000              	mov eax, 4 
+     9 00000005 BB01000000              	mov ebx, 1
+    10 0000000A B9[00000000]            	mov ecx, message
+    11 0000000F BA16000000              	mov edx, 22 
+    12 00000014 CD80                    	int 80h
+    13 00000016 B900000000              	mov ecx, 0
+    14 0000001B 8A91[00000000]          begin:	mov dl, [message+ecx]
+    15 00000021 83F916                  	cmp ecx, 22
+    16 00000024 7416                    	je the_end
+    17 00000026 80FA61                  	cmp dl, 'a'
+    18 00000029 7C0E                    	jl next
+    19 0000002B 80FA7A                  	cmp dl, 'z'
+    20 0000002E 7F09                    	jg next
+    21 00000030 80EA20                  	sub dl, 32
+    22 00000033 8891[00000000]          	mov [message+ecx], dl
+    23 00000039 41                      next:	inc ecx
+    24 0000003A EBDF                    	jmp begin
+    25                                  the_end:
+    26 0000003C B804000000              	mov eax, 4 
+    27 00000041 BB01000000              	mov ebx, 1
+    28 00000046 B9[00000000]            	mov ecx, message
+    29 0000004B BA16000000              	mov edx, 22 
+    30 00000050 CD80                    	int 80h
+    31 00000052 B801000000              	mov eax, 1 
+    32 00000057 BB00000000              	mov ebx, 0 
+    33 0000005C CD80                    	int 80h
+    34                                  
+    35                                  
