@@ -1,0 +1,17 @@
+     1                                  section .data
+     2                                  
+     3                                  section .bss
+     4                                  
+     5                                  section .text
+     6                                  	global _start
+     7                                  _start:
+     8 00000000 66B80500                	mov ax,5 ; store 5 into the ax register
+     9 00000004 66BB0200                keith:	mov bx,2 ; store 2 into the bx register
+    10 00000008 6601D8                  	add ax,bx ; ax = ax + bx
+    11                                  	; contents of register bx is added to the
+    12                                  	; original contents of register ax and the
+    13                                  	; result is stored in register ax (overwriting
+    14                                  	; the original content
+    15 0000000B B801000000              	mov eax,1 ; The system call for exit (sys_exit)
+    16 00000010 BB00000000              	mov ebx,0 ; Exit with return code
+    17 00000015 CD80                    	int 80h ; end of program
